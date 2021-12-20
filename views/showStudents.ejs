@@ -1,0 +1,20 @@
+<button onclick="window.location.href='http://localhost:3004/addStudent'">Add Student</button>
+<table border="1">
+    <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>GPA</th>
+    <th>Delete</th>
+    </tr>
+    <% students.forEach((student) =>
+    { %>
+    <tr>
+    <td><%= student.sid %></td>
+    <td><%= student.name %></td>
+    <td><%= student.gpa %></td>
+    <td><button onclick="window.location.href='http://localhost:3004/deleteStudent/<%= student.sid %>'">Delete Student</button></td>
+    </tr>
+    <% }) %>
+    </table>
+    <a href = http://localhost:3004/>Home</a>
+    

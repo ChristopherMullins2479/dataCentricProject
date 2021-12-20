@@ -1,0 +1,18 @@
+<button onclick="window.location.href='http://localhost:3004/addLecture'">Add Lecturer</button>
+<table border="1">
+<tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Department</th>
+    </tr>
+    
+    <% lecturers.forEach((lecturer) =>
+    { %>
+    <tr>
+    <td><%= lecturer._id %></td>
+    <td><%= lecturer.name %></td>
+    <td><%= lecturer.dept %></td>
+    </tr>
+    <% }) %>
+    </table>
+    <a href = http://localhost:3004/>Home</a>

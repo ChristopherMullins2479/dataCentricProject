@@ -1,0 +1,20 @@
+
+<table border="1">
+    <tr>
+    <th>Student ID</th>
+    <th>Student Name</th>
+    <th>Module ID</th>
+    <th>Delete</th>
+    </tr>
+    <% studentsInModule.forEach((student) =>
+    { %>
+    <tr>
+    <td><%= student.sid %></td>
+    <td><%= student.name %></td>
+    <td><%= student.mid %></td>
+    <td><button onclick="window.location.href='http://localhost:3004/deleteStudent'">Delete Student</button></td>
+    </tr>
+    <% }) %>
+    </table>
+    <a href = http://localhost:3004/>Home</a>
+    

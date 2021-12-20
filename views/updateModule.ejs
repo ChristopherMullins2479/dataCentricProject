@@ -1,0 +1,24 @@
+<h1>Update Module</h1>
+<table>
+    <ul>
+        <li>The Module Name should be a minimum of 5 characters.</li>
+        <li>The Credits should be 5, 10 or 15.</li>
+    </ul>
+    <% UpdateModule.forEach((module) =>
+    { %>
+        <form action="/update" method="POST">
+            <label>Module ID:</label>
+            <input type="text" readonly='true' name="module_id" value="<%= module.mid %>"><br>
+            <label>Name:</label>
+            <input type="text" name="name" value="<%= module.name %>"><br>
+            <label>Credits:</label>
+            <input type="number" name="credits" value="<%= module.credits %>"><br>
+            <input type="submit" value="Confirm">
+            </form>
+            </body>
+    
+    
+    <% }) %>
+</table>
+
+
